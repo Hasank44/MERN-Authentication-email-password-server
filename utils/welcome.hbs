@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Welcome to Our Platform</title>
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+  }
+
+  .container {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .header {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .header h2 {
+      color: #00a63d;
+      margin: 0;
+  }
+
+  .message {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.7;
+  }
+
+  .footer {
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+      margin-top: 30px;
+  }
+
+  .button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #00a63d;
+      color: #fff !important;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+      <h2>🎉 Welcome to Our Community!</h2>
+  </div>
+    
+  <div class="message">
+      <p>Hi {{name}},</p>
+      <p>Congratulations! Your email has been successfully verified.</p>
+      <p>We’re thrilled to have you with us. You now have full access to your account and can start exploring all features.</p>
+
+      <p style="text-align:center;">
+        <a class="button" href="{{url}}">Go to Dashboard</a>
+      </p>
+
+      <p>If you ever need any help, feel free to reach out.</p>
+  </div>
+
+  <div class="footer">
+      &copy; 2025 Hasan. All rights reserved.
+  </div>
+</div>
+</body>
+</html>
