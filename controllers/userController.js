@@ -59,7 +59,6 @@ export const userRegisterController = async (req, res) => {
             result: newUser
         });
     } catch (error) {
-        console.log(error);
         return res.status(500).json({
             success: false,
             message: 'Server Error Occurred'
