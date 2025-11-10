@@ -52,7 +52,6 @@ export const userRegisterController = async (req, res) => {
         newUser.token = `Bearer ${mailerToken}`;
         await newUser.save();
         verifyEmail(mailerToken, email);
-        console.log(mailerToken);
         return res.status(201).json({
             success: true,
             message: 'register success',
